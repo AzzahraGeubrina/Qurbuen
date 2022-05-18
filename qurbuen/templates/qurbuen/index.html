@@ -35,8 +35,27 @@
     </header>
 
     <main>
-      <div class="green-box">
-        <h1>hello...</h1>
+      <div class="container green-box mt-3">
+        <div class="row">
+          <div class="col-lg-6 bg-info">
+            <!-- form login -->
+            <form>
+              <div class="col-sm-7 mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" autocomplete="off">
+              </div>
+              <div class="col-sm-7 mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" autocomplete="off">
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <!-- image -->
+          <div class="col-lg-6 bg-success">
+            <img class="logo" src="{% static 'qurbuen/img/animal.png' %}" alt="logo.png" />
+          </div>
+        </div>
       </div>
     </main>
 
