@@ -19,5 +19,6 @@ from qurbuen import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('register/', views.register, name='register'),
     path('admin/', admin.site.urls),
 ]
