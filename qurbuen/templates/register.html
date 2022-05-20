@@ -39,8 +39,10 @@
         <div class="row">
           <div class="col-lg-6 bg-info">
             {% for message in messages %}
-              {% if message %}
+              {% if message.tags == 'success' %}
                 <div class="alert alert-success">{{ message }}</div>
+              {% else %}
+              <div class="alert alert-danger">{{ message }}</div>
               {% endif %}
             {% endfor %}
             <!-- form register -->
