@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from qurbuen import views
+from qurbuen.views import *
 from django.contrib.auth.views import LoginView
 
 urlpatterns = [
     path('', LoginView.as_view(), name='login'),
-    path('register/', views.register, name='register'),
-    path('index/', views.index, name='index'),
+    path('register/', register, name='register'),
+    path('index/', index, name='index'),
     path('admin/', admin.site.urls),
 ]
