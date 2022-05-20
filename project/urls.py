@@ -21,6 +21,6 @@ from django.contrib.auth.views import LoginView
 urlpatterns = [
     path('', LoginView.as_view(), name='login'),
     path('register/', views.register, name='register'),
+    path('index/', views.index, name='index'),
     path('admin/', admin.site.urls),
-    # path('login/', LoginView.as_view(), name='login'),
 ]
