@@ -25,3 +25,9 @@ def register(request):
             'form':form,
         }
     return render(request,'register.html', context)
+
+def hukum(request):
+    return render(request, 'qurbuen/hukum.html')
+
+def tentang(request):
+    return render(request, 'qurbuen/tentang.html')

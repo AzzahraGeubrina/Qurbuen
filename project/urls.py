@@ -22,5 +22,7 @@ urlpatterns = [
     path('', LoginView.as_view(), name='login'),
     path('register/', register, name='register'),
     path('index/', index, name='index'),
+    path('hukum/', hukum, name='hukum'),
+    path('tentang/', tentang, name='tentang'),
     path('admin/', admin.site.urls),
 ]
