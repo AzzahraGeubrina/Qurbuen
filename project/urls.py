@@ -25,4 +25,7 @@ urlpatterns = [
     path('hukum/', hukum, name='hukum'),
     path('tentang/', tentang, name='tentang'),
     path('admin/', admin.site.urls),
+    path('beliqurban1/', beliqurban1, name='Beli Qurban'),
+    path('beliqurban2/', beliqurban2, name='Beli Qurban'),
+    path('beliqurban3/', beliqurban3, name='Beli Qurban'),
 ]

@@ -26,8 +26,19 @@ def register(request):
         }
     return render(request,'register.html', context)
 
+<<<<<<< Updated upstream
 def hukum(request):
     return render(request, 'qurbuen/hukum.html')
 
 def tentang(request):
     return render(request, 'qurbuen/tentang.html')
+=======
+def beliqurban1(request):
+    return render(request,'qurbuen/beliqurban1.html')
+
+def beliqurban2(request):
+    return render(request,'qurbuen/beliqurban2.html')
+
+def beliqurban3(request):
+    return render(request,'qurbuen/beliqurban3.html')
+>>>>>>> Stashed changes
